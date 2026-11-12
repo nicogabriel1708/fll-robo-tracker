@@ -22,6 +22,9 @@ RUN git clone --branch 4.8.0 https://github.com/opencv/opencv.git && \
 WORKDIR /opt/opencv/build
 RUN cmake .. \
     -DCMAKE_BUILD_TYPE=RELEASE \
+    -DCMAKE_CXX_STANDARD=17 \
+    -DCMAKE_CXX_STANDARD_REQUIRED=ON \
+    -DCUDA_NVCC_FLAGS=--std=c++17 \
     -DCMAKE_INSTALL_PREFIX=/usr/local \
     -DOPENCV_EXTRA_MODULES_PATH=/opt/opencv_contrib/modules \
     -DWITH_CUDA=ON \
