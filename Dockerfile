@@ -8,7 +8,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y \
     build-essential cmake git pkg-config \
     libgtk-3-dev libavcodec-dev libavformat-dev libswscale-dev \
-    libtbb-dev libjpeg-dev libpng-dev libtiff-dev libdc1394-22-dev \
+    libtbb-dev libjpeg-dev libpng-dev libtiff-dev libdc1394-dev \
     python3-dev python3-pip python3-numpy \
     libopenblas-dev liblapack-dev libv4l-dev wget unzip && \
     rm -rf /var/lib/apt/lists/*
