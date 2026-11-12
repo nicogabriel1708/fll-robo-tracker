@@ -1,5 +1,6 @@
 # Stage 1: Build OpenCV with CUDA
-FROM nvidia/cuda:13.0.1-cudnn8-devel-ubuntu22.04 AS builder
+FROM nvidia/cuda:13.0.1-cudnn-runtime-ubuntu22.04 AS builder
+
 
 ENV DEBIAN_FRONTEND=noninteractive
 
