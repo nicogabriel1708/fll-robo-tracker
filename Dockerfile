@@ -65,5 +65,5 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 EXPOSE 8000
 
 # Command to run
-CMD ["python3", "run.py"]
+CMD ["python3", "-m", "src.run"]
 
