@@ -1,7 +1,7 @@
 LEFT_GPU = 0
 RIGHT_GPU = 0
 
-VIDEO_SOURCE = "match.mp4"
+VIDEO_SOURCE = 0
 
 # ROI
 TABLE_ROI = {
