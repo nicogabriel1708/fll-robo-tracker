@@ -18,6 +18,8 @@ services:
             - ./:/app # mount entire project folder, including match.mp4
         devices:
             - /dev/video0:/dev/video0
+        group_add:
+            - "44"
         ports:
             - "8000:8000"
         restart: unless-stopped
