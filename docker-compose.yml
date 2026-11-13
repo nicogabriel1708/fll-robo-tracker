@@ -18,6 +18,7 @@ services:
             - ./:/app # mount entire project folder, including match.mp4
         devices:
             - /dev/video0:/dev/video0
+            - /dev/video1:/dev/video1
         group_add:
             - "44"
         ports:
