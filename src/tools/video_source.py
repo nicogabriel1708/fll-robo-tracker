@@ -4,7 +4,7 @@ import cv2
 class VideoSource:
 	def __init__(self, source):
 		self.source = source
-		self.cap = cv2.VideoCapture(source)
+		self.cap = cv2.VideoCapture(source, cv2.CAP_V4L2)
 
 		if isinstance(source, int):
 			self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1920)
